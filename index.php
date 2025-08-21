@@ -49,9 +49,9 @@ require_once __DIR__ . '/MyService.php';
 
 $c1 = new Container();
 
-$c1->set('Slim\Error\Renderers\PlainTextErrorRenderer', function() {
-		return new \Slim\Error\Renderers\PlainTextErrorRenderer();
-	});
+//$c1->set('Slim\Error\Renderers\PlainTextErrorRenderer', function() {
+//		return new \Slim\Error\Renderers\PlainTextErrorRenderer();
+//	});
 
 
 $c1->set('logger', function() {
@@ -59,6 +59,9 @@ $c1->set('logger', function() {
 		$logger->pushHandler(new \Monolog\Handler\StreamHandler(__DIR__ . '/logs/app.log', \Monolog\Logger::DEBUG));
 		return $logger;
 	});
+
+//$logger = new \Monolog\Logger('test'); 
+//$logger->pushHandler(new \Monolog\Handler\StreamHandler(__DIR__ . '/logs/app.log', \Monolog\Logger::DEBUG)); 
 
 $c1->set('myService', function($c1) {
 		return new \api_server2\MyService($c1->get('logger'));
@@ -105,8 +108,10 @@ $app->add(function (ServerRequestInterface $request, RequestHandlerInterface $ha
 $app->get('/', function (ServerRequestInterface $request, ResponseInterface $response) use ($c1){
     $response->getBody()->write('Hello, World!');
     $service=$c1->get('myService');
+    //$service=$c1->get('api_logger');
     //var_dump($service); exit;
     $service->doSomething();
+    //$service->info('Test log entry'); 
     return $response;
 });
 

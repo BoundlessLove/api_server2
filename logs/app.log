@@ -1,2 +1,4 @@
 
 [2025-08-21T20:24:06.843035+12:00] test.INFO: Test log entry [] []
+[2025-08-21T21:45:29.183444+12:00] api_logger.INFO: Test log entry [] []
+[2025-08-21T21:48:54.323176+12:00] api_logger.INFO: API called: doSomething() [] []
