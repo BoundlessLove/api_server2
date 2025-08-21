@@ -1,0 +1,23 @@
+{
+    "name": "boundlesslove/api-server-php",
+    "description": "api server in php",
+    "type": "project",
+    "require": {
+        "slim/slim": "^4.14",
+        "slim/psr7": "^1.7",
+        "slim/http": "^1.4",
+        "monolog/monolog": "^3.9",
+        "php-di/php-di": "^7.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Boundlesslove\\ApiServerPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jay Sarna"
+        }
+    ]
+}
