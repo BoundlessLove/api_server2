@@ -5,7 +5,7 @@ BoundlessLove/api_client project's code uses the 'authentication and authorisati
 *Note: For its use, a file called config.php needs to be added to this project, which contains the ApiKey needed to enable anyone to connect to this API Server. This is needed in addition to the oauth_server code's authorisation, in order to communicate with the BoundlessLove/api_server2. ApiKey's original purpose was to serve as a defence for DDOS attacks, when the oAuth Server was not being used.*
 
 
-## Pre-Requisite: Setup virtual host on default apache2 server running on Ubuntu 22.04 LTS on port 8080 (accessible via http://localhost:8080)
+## Pre-Requisite: [Applies to Dev branch only] Setup virtual host on default apache2 server running on Ubuntu 22.04 LTS on port 8080 (accessible via http://localhost:8080)
 Apache was used. The process used was as following:
 ### a. Verify Apache has php module Enabled
 #### i. Run 'apache2ctl -M | grep php'. Outcome should show something like 'php_module (shared)'. If not continue with below steps.
