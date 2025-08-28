@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'validApiKey' => 'my-secret-key-stormy-day',
+    'validApiKey' => 'ApYf1npdTkwRdG6z6ZfdLYKimTy8FmkV',
 ];
