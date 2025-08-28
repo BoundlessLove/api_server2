@@ -8,13 +8,13 @@ BoundlessLove/api_client project's code uses the 'authentication and authorisati
 ## License
 This project is under a custom license. Use of the code requires **explicit written permission from the author**. See the [LICENSE](./LICENSE) file for details.
 
-##Versions
+## Versions
 
-###Version 0.1
+### Version 0.1
 21 Aug 2025 9:00 PM- API Server works on its own, testLog.php works, but when placing logger class into container does not work.
 
-###Version 0.2
+### Version 0.2
 21 Aug 2025 9:57 PM- Logging in the form of a service via object instantiated at startup working
 
-###Version 0.3
+### Version 0.3
 27 August 2025 8:48 PM - implemented API key. separated API key into file in public root, which cannot be accesses from website. Added Git. App working with API client running on http://localhost:8080
