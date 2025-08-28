@@ -27,14 +27,14 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=6
+current_page=3
 FILE_NAME_0=39;PHP;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2Fprojects%2Fapi_server2%2Findex.php;0;4
-FILE_NAME_1=661;PHP;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2Fprojects%2Fapi_server2%2Fsrc%2FMiddleware%2FApiKeyMiddleware.php;0;4
-FILE_NAME_2=40;PHP;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2Fprojects%2Fapi_client%2Findex.php;0;4
-FILE_NAME_3=59;PHP;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2Fprojects%2Fapi_server2%2Fconfig.php;0;4
-FILE_NAME_4=11;None;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2Fprojects%2Fapi_server2%2F.gitignore;0;4
-FILE_NAME_5=0;None;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2Fprojects%2Fapi_server2%2FLICENSE;0;4
-FILE_NAME_6=0;Markdown;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2Fprojects%2Fapi_server2%2FREADME.md;0;4
+FILE_NAME_1=407;None;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2FGitProjects%2Fapi_client%2Fapi_client.geany;0;4
+FILE_NAME_2=809;None;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2FGitProjects%2Fapi_server2%2Fapi_server2.geany;0;4
+FILE_NAME_3=0;PHP;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2FGitProjects%2Fapi_server2%2Findex.php;0;4
+FILE_NAME_4=0;None;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2FGitProjects%2Fapi_server2%2Flogs%2Fapp.log;0;4
+FILE_NAME_5=362;PHP;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2FGitProjects%2Fapi_server2%2FMyService.php;0;4
+FILE_NAME_6=0;PHP;0;EUTF-8;1;1;1;%2Fhome%2Fadministrator%40internal.systematicdefence.tech%2FGitProjects%2Fapi_server2%2FtestLog.php;0;4
 
 [VTE]
 last_dir=/home/administrator@internal.systematicdefence.tech

@@ -14,6 +14,7 @@ class MyService {
 	}
 	
 	public function doSomething() {
+			file_put_contents('/tmp/test.log', 'Logger is about to write');
 			$this->logger->info("API called: doSomething()");
 			echo "Action completed!";
 	}

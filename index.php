@@ -1,4 +1,7 @@
 <?php 
+//configured to run on http://localhost:8070
+namespace api_server2;
+
 error_reporting(E_ALL);
 ini_set('display_errors',1);
 ini_set('display_startup_errors', 1);
@@ -28,10 +31,6 @@ error_reporting(E_ALL);
  * 
  */
 
-?>
-<?php
-
-
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
@@ -41,11 +40,13 @@ use api_server2\ServiceContainer;
 use api_server2\MyService;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
+use api_server2\middleware\ApiKeyMiddleware;
 
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/ServiceContainer.php';
 require_once __DIR__ . '/MyService.php';
 //require_once __DIR__ . '/Logger.php';
+require_once __DIR__ . '/middleware/ApiKeyMiddleware.php';
 
 $c1 = new Container();
 
@@ -103,6 +104,11 @@ $app->add(function (ServerRequestInterface $request, RequestHandlerInterface $ha
 
     return $response;
 });
+
+$config = require __DIR__ . '/config.php';
+$validApiKey = $config['validApiKey'];
+$app->add(new ApiKeyMiddleware($validApiKey));
+
 
 // Define app routes
 $app->get('/', function (ServerRequestInterface $request, ResponseInterface $response) use ($c1){
